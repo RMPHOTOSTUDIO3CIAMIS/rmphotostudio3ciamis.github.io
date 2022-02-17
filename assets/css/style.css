@@ -5,3 +5,47 @@
 section {
     padding-top: 5rem ;
 }
+.galery {
+  padding-top: 1rem;
+}
+nav{
+    padding-top: 3rem;
+}
+
+/* css responsive gambar */
+.row {
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    border-radius: 10px;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 350px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
